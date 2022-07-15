@@ -64,6 +64,7 @@ const Canvas = observer(() => {
     switch (figure.type){
       case "brush":
         Brush.draw(ctx, figure.x, figure.y)
+        console.log(msg);
         break;
       case "rect":
         Rect.staticDraw(ctx, figure.x, figure.y, figure.width, figure.height, figure.color)
